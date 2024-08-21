@@ -1,4 +1,8 @@
 /* Reset some default styles */
+html {
+    scroll-behavior: smooth;
+  }
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -48,7 +52,7 @@ nav a:hover {
     padding: 150px 0;
     background-image: url('hero-bg.jpg');
     background-size: cover;
-    color: white;
+    color: rgb(15, 14, 14);
 }
 
 .hero h1 {
@@ -124,3 +128,21 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
